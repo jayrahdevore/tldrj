@@ -1,0 +1,28 @@
+{
+  "neighbors": [
+    {
+      "name": "Eddie Haskell",
+      "address": "211 Pine Street",
+      "num_cars": 0,
+      "dependents": []
+    },
+    {
+      "name": "Ward Cleaver",
+      "address": "485 Maple Drive",
+      "num_cars": 2,
+      "dependents": [
+        "June Cleaver",
+        "Theodore Cleaver",
+        "Wallace Cleaver"
+      ]
+    },
+    {
+      "name": "Clarence Rutherford",
+      "address": "312 Rosewood Way",
+      "num_cars": 1,
+      "dependents": []
+    }
+  ],
+  "neighborhood": "Happy Oaks",
+  "city": "Mayfield"
+}
