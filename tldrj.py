@@ -99,6 +99,8 @@ class ElementDict(Element):
     @property
     def level(self):
         """level from leaf"""
+        if len(self.example.values()) == 0:
+            return 1
         return 1 + max([e.level for e in self.example.values()])
 
 
