@@ -101,7 +101,7 @@ class ElementDict(Element):
         """level from leaf"""
         if len(self.example.values()) == 0:
             return 1
-        return 1 + max([e.level for e in self.example.values()])
+        return 1 + max([0 if e is None else e.level for e in self.example.values()])
 
 
 def parse(data) -> Element | ElementList | ElementDict:
