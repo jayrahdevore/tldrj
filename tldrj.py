@@ -90,11 +90,11 @@ class ElementDict(Element):
 
     @property
     def mwe(self):
-        return {k: e.mwe for k, e in self.example.items()}
+        return {k: None if e is None else e.mwe for k, e in self.example.items()}
 
     @property
     def describe(self):
-        return {k: e.describe for k, e in self.example.items()}
+        return {k: None if e is None else e.describe for k, e in self.example.items()}
 
     @property
     def level(self):
